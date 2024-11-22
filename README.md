@@ -15,3 +15,20 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 Hi, I'm Linnea and I'm a student in tunghai universty now. 🌸 Previously study at Shih Chien universty .  I care about enriches unceasingly oneself.
+## 🔭 Goals of 2025
+I want to learn English. Now I watch English youtube channels and articles everyday and write English articles about program technology each week, I hope I can prepared in 2025 💪. 
+## 🧠 That I know and use
+### 📚 Langues and Frameworks
+- HTML5
+- C,C#
+- Bootstrap
+- JavaScript
+
+### 🔧 Tool
+- Word
+- Powerpoint
+- Excel
+- PowerBI
+- ERP
+
+## 💡 Projects
