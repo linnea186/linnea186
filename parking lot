@@ -1,0 +1,121 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<time.h>
+//定義停車場最大容量
+#define MAX_CAPACITY 100
+//定義時間計價單價(每小時收費)
+#define UNIT_PRICE 10
+//定義車輛
+typedef struct Car{
+    char num[10];//車牌號
+    int enter_time;//進入時間
+    int exit_time;//離開時間
+    int cost;//費用
+}Car;
+//定義全部變量
+Car parking_lot[MAX_CAPACITY];//停車場
+int parked_count = 0;//已停數量
+char username[20] = "admin";
+char password[20] = "admin";
+
+//函數
+void show_menu(int is_admin);
+void show_parked_cars();
+void park_car();
+void unpark_car();
+void show_statistics();
+int validate_user();
+
+int main(){
+    int is_admin = 0;//是否為管理員
+    int choice;
+//驗證用戶名和密碼是否正確
+    if (validate_user()){
+        is_admin = 1;
+    }
+/*
+    //顯示登入選項
+    printf("請選擇登入方式:\n");
+    printf("1.管理員\n");
+    printf("2.用戶\n");
+    printf("請輸入選項:\n");
+    scanf("%d",&choice);
+    //管理員登錄
+    if(choice ==1){
+        char username[20],password[20];
+        printf("請輸入管理員用戶名和密碼:\n");
+        printf("用戶名:");
+        scanf("%s",username);
+        printf("密碼:");
+        scanf("%s",password);
+
+        is_admin = 1;
+    }
+*/
+    while(1){
+        show_menu(is_admin);
+        printf("請輸入選項:");
+        scanf("%d",&choice);
+
+        switch (choice){
+            case 1:
+                show_parked_cars();
+                break;
+            case 2:
+                park_car();
+                break;
+            case 3:
+                unpark_car();
+                break;
+            case 4:
+                show_statistics();
+                break;
+            case 5:
+                printf("謝謝使用,再見!\n");
+                exit(0);
+            default:
+                printf("無效選項,請重新輸入\n");
+                break;
+        }
+    }
+
+    return 0;
+}
+
+void show_menu(int is_admin){
+    printf("==========\n");
+    printf("歡迎使用停車場管理系統\n");
+    printf("==========\n");
+    printf("1.查看已停車輛\n");
+    printf("2.停車\n");
+    printf("3.取車\n");
+    printf("4.查看統計信息\n");
+    printf("5.退出\n");
+    
+    if (is_admin)
+    {
+        
+    }
+}
+
+void show_parked_cars()
+{
+    
+}
+void park_car()
+{
+    
+}
+void unpark_car()
+{
+    
+}
+void show_statistics()
+{
+    
+}
+int validate_user()
+{
+    
+}
